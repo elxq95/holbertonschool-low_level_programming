@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-/** main is the  Entry point
- * This is a program that prints exactly
+/**
+ * main -  Entry point
+ *
+ * Description: This is a program that prints exactly
  * "with proper grammar, but the outcome is a piece of art,"
  * using the function printf
- * return always 0 (success)
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
