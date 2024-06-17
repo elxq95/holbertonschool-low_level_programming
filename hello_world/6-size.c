@@ -3,9 +3,8 @@
  *
  * main - Entry point
  *
- * Description: A C program that prints the size of various types on the computer it is compiled and run on
+ * Description: A C program that prints the size of various types
  *
- * Size of char, int, long int, long long int, float
  * Return - Always 0 (Success)
  */
 int main(void)
