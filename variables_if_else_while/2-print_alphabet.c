@@ -10,8 +10,12 @@
 
 int main(void)
 {
-	char alphabets = 'abcdefghijklmnopqrstuvwxyz';
-	putchar(alphabets);
+	char alpha;
+
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	{
+		putchar(alpha);
+	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
