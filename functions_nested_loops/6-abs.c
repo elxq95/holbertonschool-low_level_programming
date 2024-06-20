@@ -9,8 +9,6 @@
  */
 int _abs(int n)
 {
-	int n;
-
 	if (abs(n) > 0)
 	{
 		return (n);
