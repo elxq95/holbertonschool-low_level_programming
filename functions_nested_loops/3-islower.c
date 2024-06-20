@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
 /**
- * main - This is a program that
+ * _islower - This is a program that
  * uses a function to check for
  * lowercase character.
  *
@@ -10,12 +11,13 @@
 
 int _islower(int c)
 {
-	char a = 'c';
+char a = 'c';
+	
 	if (islower(a))
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
