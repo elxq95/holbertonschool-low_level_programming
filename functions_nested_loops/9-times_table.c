@@ -17,23 +17,18 @@ void times_table(void)
 		for (i = 0; i < 10; i++)
 		{
 			value = h * i;
+
+			if (i != 9)
 			{
-				if (value < 10)
-				{
-					_putchar(value + '0');
-					{
-						if (h != 9)
-						{
-							_putchar(',');
-							_putchar(' ');
-						}
-						else
-						{
-							_putchar('\n');
-						}
-					}
-				}
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
-		}	
+			if (h < 10)
+			{
+				_putchar(value + '0');
+			}
+		}
+			_putchar('\n');
 	}
 }
