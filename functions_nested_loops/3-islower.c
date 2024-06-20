@@ -5,7 +5,7 @@
  * _islower - This is a program that
  * uses a function to check for
  * lowercase character.
- *
+ * @c: the character to check
  * Return: Always 0 (Success)
  */
 
