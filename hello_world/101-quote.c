@@ -1,21 +1,14 @@
-#include <stdio.h>
+#include <unistd.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: Prints a specific message to the standard error
+ * Return: Always 1 (Error code)
+ */
 int main(void)
 {
-	printf("and that piece of art is useful\" - ");
-	putchar('D');
-	putchar('o');
-	putchar('r');
-	putchar('a');
-	putchar(' ');
-	putchar('K');
-	putchar('o');
-	putchar('r');
-	putchar('p');
-	putchar('a');
-	putchar('r');
-	putchar(',');
-	putchar(' ');
-	printf("2015-10-10");
-	return (1);
+    char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    write(2, message, sizeof(message) - 1);
+    return (1);
 }
