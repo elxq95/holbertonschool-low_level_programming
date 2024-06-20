@@ -9,16 +9,12 @@
  */
 int _abs(int n)
 {
-	if (abs(n) < 0)
-	{
-		return (n);
-	}
-	else if (abs(n) > 0)
-	{
-		return (n);
-	}
-	else
+	if (abs(n) == 0)
 	{
 		return (0);
+	}
+	else (abs (n))
+	{
+		return (n);
 	}
 }
