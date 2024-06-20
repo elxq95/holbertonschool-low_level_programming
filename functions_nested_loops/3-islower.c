@@ -11,9 +11,7 @@
 
 int _islower(int c)
 {
-char a = 'c';
-	
-	if (islower(a))
+	if (islower(c))
 	{
 		return (1);
 	}
