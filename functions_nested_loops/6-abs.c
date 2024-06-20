@@ -4,10 +4,10 @@
 #include <stdlib.h>
 /**
  * _abs - check the code
- * @int: check the code
+ * @n: check the code
  * Return: 0 (Success)
  */
-int _abs(int)
+int _abs(int n)
 {
 	int n;
 
