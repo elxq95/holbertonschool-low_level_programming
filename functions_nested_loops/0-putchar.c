@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <stdio.h>i
+#include "main.h"
+
 /**
  * main - Entry point
  *
@@ -10,15 +12,9 @@
 int main(void)
 {
 	{
-	putchar(95);
-	putchar(112);
-	putchar(117);
-	putchar(116);
-	putchar(99);
-	putchar(104);
-	putchar(97);
-	putchar(114);
-}
-putchar('\n');
-return (0);
+		char a = "_putchar";
+	_putchar(a);
+	}
+	_putchar('\n');
+	return (0);
 }
