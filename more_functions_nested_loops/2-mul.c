@@ -4,7 +4,7 @@
  * mul - multiplication of 2 variables
  * @a: integer
  * @b: integer
- * Return : Always 0
+ * Return: some value
  */
 
 int mul(int a, int b)
