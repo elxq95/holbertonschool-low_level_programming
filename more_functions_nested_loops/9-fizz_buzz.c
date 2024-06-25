@@ -13,25 +13,22 @@ int main(void)
 
 	for (i = 0; i <= 100; i++)
 	{
-		if (i % 3 != 0 || i % 5 != 0 || (i % 3 != 0 && i % 5 != 0))
+		if (i % 3 == 0)
 		{
-			if (i % 3 == 0)
-			{
-				printf("%s ", f);
-			}
-			else if (i % 5 == 0)
-			{
-				printf("%s ", b);
-			}
-			else if (i % 3 == 0 && i % 5 == 0)
-			{
-				printf("%s ", fb);
-			}
-			else
-			{
+			printf("%s ", f);
+		}
+		else if (i % 5 == 0)
+		{
+			printf("%s ", b);
+		}
+		else if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("%s ", fb);
+		}
+		else
+		{
 			printf("%d ", i);
-			}
+		}
 	}
 	return (0);
-	}
 }
