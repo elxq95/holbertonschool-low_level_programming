@@ -15,20 +15,20 @@ int main(void)
 	{
 		if (i % 3 != 0 || i % 5 != 0 || (i % 3 != 0 && i % 5 != 0))
 		{
+			if (i % 3 == 0)
+			{
+				printf("%s ", f);
+			}
+			else if (i % 5 == 0)
+			{
+				printf("%s ", b);
+			}
+			else if (i % 3 == 0 && i % 5 == 0)
+			{
+				printf("%s ", fb);
+			}
 			printf("%d ", i);
 		}
-		else if (i % 3 == 0)
-		{
-			printf("%s ", f);
-		}
-		else if (i % 5 == 0)
-		{
-			printf("%s ", b);
-		}
-		else if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("%s ", fb);
-		}
-	}
 	return (0);
+	}
 }
