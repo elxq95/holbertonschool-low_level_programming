@@ -15,6 +15,8 @@ void puts2(char *str)
 	int length;
 	int i;
 
+	length = 0;
+
 	while (str[length] != '\0')
 	{
 		length++;
