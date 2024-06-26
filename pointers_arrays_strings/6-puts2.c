@@ -22,9 +22,9 @@ void puts2(char *str)
 		length++;
 	}
 
-	i = length - 1;
+	i = 0;
 
-	while (i >= 0)
+	while (i < length)
 	{
 		_putchar(str[i]);
 		i += 2;
