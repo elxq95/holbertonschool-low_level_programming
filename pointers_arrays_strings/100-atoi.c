@@ -8,7 +8,7 @@
  * Return: Always 0
  */
 
-int _atoi(char *s);
+int _atoi(char *s)
 {
 	int count = 0;
 	int sign = 1;
@@ -37,7 +37,7 @@ int _atoi(char *s);
 		{
 			sign = sign * -1;
 		}
-		
+
 		count = count + 1;
 	}
 
