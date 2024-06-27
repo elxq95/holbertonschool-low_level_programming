@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _atoi(char *s) - function that
+ * _atoi- function that
  * converts a string to an integer
  * @s: pointer to a string
  * Return: Always 0
