@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * *strncpy - copies 2 strings
+ * *_strncpy - copies 2 strings
  * @dest: pointer to destination
  * @src: pointer to string
  * @n: integer
