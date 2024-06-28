@@ -23,7 +23,7 @@ char *cap_string(char *str)
 	{
 		convert = 1;
 	}
-		else if (convert = 1 && (str[i] >= 'a' && str[i] <= 'z'))
+		else if (convert && (str[i] >= 'a' && str[i] <= 'z'))
 		{
 			str[i] = str[i] - 32;
 			convert = 0;
