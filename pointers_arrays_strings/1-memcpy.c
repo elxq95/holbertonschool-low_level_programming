@@ -4,29 +4,19 @@
 /**
  * *_memcpy - function that
  * copies memory area
- * @dest: pointer to destination
- * @src: pointer to string
- * @n: unsigned int
- * Return: dest
+ * @dest: pointer to destination memory area
+ * @src: pointer to source memory area
+ * @n: number of bytes to copy
+ * Return: pointer to destination memory area
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i = 0;
-	unsigned int j;
+	unsigned int i;
 
-
-	while (i < n)
+	for (i = 0; i < n; i++)
 	{
-		while (src[i] != '\0')
-		{
-			for (j = 0; j > 0; j++)
-			{
-				dest[j] = src[i];
-			}
-			dest[j] = '\0';
-			i++;
-		}
+		dest[i] = src[i];
 	}
 	return (dest);
 }
