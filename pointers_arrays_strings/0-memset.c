@@ -6,7 +6,7 @@
  * fills memory with a constant byte
  * @s:pointer to a string
  * @b:a string
- * @n:
+ * @n: unsigned int
  * Return: check the code
  */
 
