@@ -15,7 +15,6 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int i = 0;
 	unsigned int j = 0;
 	unsigned int counter = 0;
-	unsigned int byte = 0;
 	int charfound = 0;
 	int contloop = 1;
 
