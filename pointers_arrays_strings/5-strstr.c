@@ -25,7 +25,6 @@ char *_strstr(char *haystack, char *needle)
 			{
 				foundword = 1;
 				findword = 0;
-				break;
 			}
 			j++;
 		}
