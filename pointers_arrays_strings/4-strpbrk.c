@@ -16,7 +16,6 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int j = 0;
 	int findchar = 1;
 	int foundchar = 0;
-	int ch = 0;
 
 	while (s[i] != '\0' && findchar == 1)
 	{
