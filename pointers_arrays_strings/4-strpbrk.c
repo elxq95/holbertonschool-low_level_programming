@@ -32,7 +32,7 @@ char *_strpbrk(char *s, char *accept)
 		}
 		if (foundchar == 0)
 		{
-			findchar == 0;
+			findchar = 0;
 		}
 		i++;
 	}
