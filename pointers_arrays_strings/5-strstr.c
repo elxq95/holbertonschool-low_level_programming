@@ -12,23 +12,21 @@ char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i = 0;
 	unsigned int j;
-	int findword = 1;
-	int foundword = 0;
+	int findword = 0;
 	
-	while (haystack[i] != '\0' && findword == 1)
+	while (haystack[i] != '\0')
 	{
 		j = 0;
-		foundword = 0;
+		findword = 1;
 		while (needle[j] != '\0')
 		{
 			if (haystack[i] == needle[j])
 			{
-				foundword = 1;
-				findword = 0;
+				findword = 1;
 			}
 			j++;
 		}
-		if (foundword == 1)
+		if (findword == 1)
 		{
 			return (needle);
 		}
