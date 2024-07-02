@@ -25,14 +25,15 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				return (&s[i]);
 				foundchar = 1;
+				findchar = 0;
+				break;
 			}
 			j++;
 		}
-		if (foundchar == 0)
+		if (foundchar == 1)
 		{
-			findchar = 0;
+			return (&s[i]);
 		}
 		i++;
 	}
