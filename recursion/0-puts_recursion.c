@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * _puts_recursion - a function
@@ -12,13 +13,13 @@ void _puts_recursion(char *s)
 {
 	int i = 0;
 
+	while (s[i] != '\0')
+	{
+		_putchar(s[i]);
+		i++;
+	}
 	if (s[i] == '\0')
 	{
-		printf("\n");
-	}
-	if (s[i] != '\0')
-	{
-		printf("%s\n", s);
-		i++;
+		_putchar('\n');
 	}
 }
