@@ -48,7 +48,8 @@ int _sqrt_helper(int n, int s)
 
 int _sqrt_recursion(int n)
 {
-	result = -1;
+
+	int result = -1;
 
 	if (n > 0)
 	{
