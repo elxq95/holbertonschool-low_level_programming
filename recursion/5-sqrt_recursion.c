@@ -52,7 +52,7 @@ int _sqrt_recursion(int n)
 
 	if (n > 0)
 	{
-		result = _sqrt_step(n, 1);
+		result = _sqrt_helper(n, 1);
 	}
 
 	return (result);
