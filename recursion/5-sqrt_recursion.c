@@ -15,7 +15,7 @@ int _sqrt_helper(int n, int s)
 
 	if ((n - s) > 0)
 	{
-		result = _sqrt_step(n - s, s + 2);
+		result = _sqrt_helper(n - s, s + 2);
 
 		if (result != -1)
 		{
