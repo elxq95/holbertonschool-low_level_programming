@@ -5,7 +5,7 @@
  * prints its name
  * followed by a new line
  * @argc: returns the number of arguments
- * @argv pointer to the argument
+ * @argv: pointer to the argument
  * Return: Always 0
  */
 
