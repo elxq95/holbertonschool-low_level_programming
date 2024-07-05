@@ -22,7 +22,7 @@ int is_prime_number(int n)
 /**
  * prime_helper - subfunction
  * @n: integer
- * @s: integer to subtract
+ * @divisor: integer to subtract
  * Return: result
  */
 
