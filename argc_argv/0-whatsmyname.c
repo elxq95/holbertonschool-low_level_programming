@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * This is a program that
+ * main - This is a program that
  * prints its name
  * followed by a new line
  * @argc: returns the number of arguments
