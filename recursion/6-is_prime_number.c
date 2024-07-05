@@ -6,7 +6,7 @@
  * that returns 1 if the input
  * integer is a prime number
  * @n: integer
- * Return: 1 if the integer is 
+ * Return: 1 if the integer is
  * a prime number
  */
 
@@ -16,7 +16,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return prime_helper(n, 2);
+	return (prime_helper(n, 2));
 }
 
 /**
@@ -36,5 +36,5 @@ int prime_helper(int n, int divisor)
 	{
 		return (0);
 	}
-	return prime_helper(n, divisor + 1);
+	return (prime_helper(n, divisor + 1));
 }
