@@ -11,7 +11,15 @@
 
 int main(int argc, char **argv)
 {
-	
-		printf("%d\n", argc);
-		return (0);
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+		printf("%d\n", i);
+	}
+	if (argc = 0)
+	{
+		printf("0\n");
+	}
+	return(0);
 }
