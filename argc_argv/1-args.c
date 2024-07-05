@@ -1,25 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - writes a program
  * that prints the number of
  * arguments passed into it
  * @argc = number of arguments
- * @argv = pointer to the arguments
+ * @argv = pointer to arguments
  * Return - Always 0
  */
-
-int main(int argc, char **argv)
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%d\n", i);
-	}
-	if (argc = 0)
-	{
-		printf("0\n");
-	}
-	return(0);
+    printf("%d\n", argc - 1);
+    return (0);
 }
