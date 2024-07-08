@@ -16,17 +16,29 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i;
-	char newstring;
+	unsigned int i, length;
+	char *newstring;
 
-	i = 0;
-	str = (char *)malloc(i * sizeof(char));
-	while (str != NULL)
-	{
-		str = newstring;
-		return (newstring);
-	}
-	i++;
 	if (str == NULL)
-	return (NULL);
+	{
+		return (NULL);
+	}
+
+	for (length = 0; str[length] != 0; length++);
+
+	newstring = (char *)malloc((length +1) * sizeof(char));
+
+	if (newstring  == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < length; i ++)
+	{
+		newstring[i] = str[i];
+	}
+
+	newstring[length] = '\0';
+
+	return (newstring);
 }
