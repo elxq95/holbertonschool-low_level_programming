@@ -14,7 +14,6 @@ char *str_concat(char *s1, char *s2)
 {
 	int i;
 	int length;
-	char combine;
 
 	for (length = 0; s1[length] != '\0'; length++)
 	{
