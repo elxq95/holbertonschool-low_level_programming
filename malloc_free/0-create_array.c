@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
- 
+
 /**
  * *createa-array - a function that
- * creates an array of chars, and initializes it 
+ * creates an array of chars, and initializes it
  * with a specific char.
  * @size: unsigned int
  * @c: string
