@@ -17,8 +17,6 @@
 char *_strdup(char *str)
 {
 	unsigned int i;
-	char newstring;
-
 
 	i = 0;
 	str = (char *)malloc(i * sizeof(char));
