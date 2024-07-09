@@ -7,7 +7,7 @@
  * that concatenates two strings
  * @s1: pointer to string 1
  * @s2: pointer to string 2
- * n: integer
+ * @n: integer
  * Return: NULL if fail
  */
 
