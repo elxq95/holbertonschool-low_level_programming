@@ -38,10 +38,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		array[i] = 0;
 	}
-	if (array[i] == 0)
-	{
-		return (NULL);
-	}
 
 	return (array);
 }
