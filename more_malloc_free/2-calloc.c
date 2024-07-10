@@ -6,8 +6,8 @@
  * _calloc - function that
  * allocates memory for an array,
  * using malloc
- * @nenmb: an array of integers
- * @size: size of the nmemb
+ * @nmemb: an array of integers
+ * @size: size in bytes
  * Return: NULL if nmemb or size = 0
  * or if Malloc fails
  */
