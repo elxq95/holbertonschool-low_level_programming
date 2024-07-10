@@ -13,15 +13,15 @@
 
 int *array_range(int min, int max)
 {
-	unsigned int i;
-	unsigned int *array;
+	int i;
+	int *array;
 
 	if (min > max)
 	{
 		return (NULL);
 	}
 
-	array = malloc(sizeof(unsigned int) * (max - min + 1));
+	array = malloc(sizeof(int) * (max - min + 1));
 	if (array == NULL)
 	{
 		return (NULL);
