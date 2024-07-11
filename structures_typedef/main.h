@@ -2,14 +2,11 @@
 #define MY_HEADER
 
 /**
- * init_dog - function that
- * initialize a variable of type
- * @struct dog d - dog
- * @name - pointer to a string
- * @age - age of dog
- * @owner - pointer to a string
+ * struct dog - A new type describing a dog
+ * @name: The name of the dog
+ * @age: The age of the dog
+ * @owner: The owner of the dog
  */
-
 struct dog
 {
         char *name;
