@@ -4,7 +4,7 @@
 /**
  * _strlength - Calculates the length of a string
  * @s: The string
- * 
+ *
  * Return: Length of the string
  */
 int _strlength(char *s)
