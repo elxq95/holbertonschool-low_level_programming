@@ -4,6 +4,23 @@
 #include<stdlib.h>
 
 /**
+ * _strlength - Calculates the length of a tring
+ * @s: The string
+ * Return: Length of the string
+ */
+
+int _strlength(char *s)
+{
+	int length = 0;
+
+	while (*s++)
+	{
+		length++;
+	}
+	return (length);
+}
+
+/**
  * new_dog - function
  * that creates a new dog
  * @name: name of dog
@@ -21,7 +38,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new_dog == NULL)
 		return (NULL);
 
-	new_name = malloc(strlen(name) + 1);
+	new_name = malloc(_strlength(name) + 1);
 	if (new_name == NULL)
 	{
 		free(new_dog);
@@ -29,7 +46,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	strcpy(new_name, name);
 
-	new_owner = malloc(strlen(owner) + 1);
+	new_owner = malloc(_strlength(owner) + 1);
 	{
 		free(new_name);
 		free(new_dog);
