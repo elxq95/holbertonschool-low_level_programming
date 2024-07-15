@@ -7,6 +7,7 @@
  * executes a function given as a
  * parameter on each element
  * of an array
+ * @size; size of the array
  * @array: pointer to an array
  * @action: a function pointer that
  * points to a function which takes an integer as an argument
