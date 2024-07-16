@@ -4,8 +4,8 @@
 
 /**
  * main - this is a program that
- * @argc - number of arguments
- * @argv - pointer to an array of characters
+ * @argc:  number of arguments
+ * @argv: pointer to an array of characters
  * Return: 0 if successful
  */
 
