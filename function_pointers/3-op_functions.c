@@ -5,7 +5,7 @@
  * op_add - sum
  * @a: integer
  * @b: integer
- * return: check the code
+ * Return: check the code
  */
 
 int op_add(int a, int b)
@@ -17,7 +17,7 @@ int op_add(int a, int b)
  * op_sub - subtraction
  * @a: integer
  * @b: integer
- * return: check the code
+ * Return: check the code
  */
 
 int op_sub(int a, int b)
@@ -29,7 +29,7 @@ int op_sub(int a, int b)
  * op_mul - multiply
  * @a: integer
  * @b: integer
- * return: check the code
+ * Return: check the code
  */
 
 int op_mul(int a, int b)
@@ -41,7 +41,7 @@ int op_mul(int a, int b)
  * op_div - division
  * @a: integer
  * @b: integer
- * return: check the code
+ * Return: check the code
  */
 
 int op_div(int a, int b)
@@ -53,7 +53,7 @@ int op_div(int a, int b)
  * op_mod - modulus
  * @a: integer
  * @b: integer
- * return: check the code
+ * Return: check the code
  */
 
 int op_mod(int a, int b)
