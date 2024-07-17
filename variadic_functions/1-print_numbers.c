@@ -4,10 +4,10 @@
 
 /**
  * print_numbers - this is a function
- * that prints numbers, followed by 
+ * that prints numbers, followed by
  * a new line.
- * @seperator:
- * @n:
+ * @separator: string to be printed between numbers
+ * @n: number of integers passed to the function
  * Return: check the code
  */
 
