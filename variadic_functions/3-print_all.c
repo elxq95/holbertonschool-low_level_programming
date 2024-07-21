@@ -40,6 +40,11 @@ void print_string(va_list args)
 	printf("%s", str);
 }
 
+/**
+ * print_all - Prints anything based on format.
+ * @format: The format string.
+ */
+
 void print_all(const char * const format, ...)
 {
 	format_spec_t specs[] = {
