@@ -34,7 +34,7 @@ void print_float(va_list args)
 void print_string(va_list args)
 {
 	char *str = va_arg(args, char *);
-	
+
 	if (str == NULL)
 		str = "(nil)";
 	printf("%s", str);
@@ -61,7 +61,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == specs[j].spec)
 			{
-				printf("%s",separator);
+				printf("%s", separator);
 				specs[j].print_func(args);
 				separator = ", ";
 				break;
