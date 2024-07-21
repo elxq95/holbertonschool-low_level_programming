@@ -34,6 +34,7 @@ void print_float(va_list args)
 void print_string(va_list args)
 {
 	char *str = va_arg(args, char *);
+	
 	if (str == NULL)
 		str = "(nil)";
 	printf("%s", str);
@@ -42,11 +43,11 @@ void print_string(va_list args)
 void print_all(const char * const format, ...)
 {
 	format_spec_t specs[] = {
-	{'c', print_char},
-        {'i', print_int},
-        {'f', print_float},
-        {'s', print_string},
-        {'\0', NULL}
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string},
+		{'\0', NULL}
 	};
 	va_list args;
 	unsigned int i = 0, j;
