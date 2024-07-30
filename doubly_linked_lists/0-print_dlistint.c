@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
+#include <stdlib.h>
+#include <stddef.h>
 
 /**
  * print_dlistint - function that prints
@@ -14,19 +16,9 @@ size_t print_dlistint(const dlistint_t *h)
 
 	while (h != NULL)
 	{
-		if (h->str == NULL)
-		{
-			printf("[0] (nil)\n");
-		}
-		else
-		{
-			printf("[%u] (%s)\n", h->len, h->str);
-		}
-		if (h->next != NULL && h->prev == NULL)
-		{
-			h = h->next;
-			count++;
-		}
+		printf("%d\n", h->n);
+		h = h->next;
+		count++;
 	}
 	return (count);
 }
