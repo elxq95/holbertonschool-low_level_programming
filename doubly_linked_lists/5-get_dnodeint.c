@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <st
+dio.h>
 #include "lists.h"
 #include <stdlib.h>
 
@@ -13,7 +14,8 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int current_index = 0; /*Use a different variable to keep  track of the current index */
-	if (head != NULL)
+	
+	while (head != NULL)
 	{
 		if (current_index == index)
 		{
