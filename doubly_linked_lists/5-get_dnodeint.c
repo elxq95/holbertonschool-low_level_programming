@@ -12,13 +12,15 @@
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	index = 0;
+	unsigned int current_index = 0; /*Use a different variable to keep  track of the current index */
 	if (head != NULL)
 	{
+		if (current_index == index)
+		{
+			return (head); /**Return the node if the current index matches the given index */
+		}
 		head = head->next;
-		index++;
-		return (&index);
+		current_index++;
 	}
-	else
-		return (NULL);
+	return (NULL);
 }
