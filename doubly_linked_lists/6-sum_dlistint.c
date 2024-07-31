@@ -9,7 +9,7 @@
  * Return: 0 if list is empty
  */
 
-int sum_dlistint(dlistitn_t *head)
+int sum_dlistint(dlistint_t *head)
 {
 	unsigned int sum, index = 0;
 
