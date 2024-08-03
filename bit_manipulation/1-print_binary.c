@@ -15,7 +15,7 @@ void print_binary(unsigned long int n)
 
     while (mask > 0)
     {
-        if (n & mask != 0)
+        if ((n & mask) != 0)
         {
             _putchar('1');
             started = 1;
