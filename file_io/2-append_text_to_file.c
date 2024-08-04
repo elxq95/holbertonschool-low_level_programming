@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include "append_text_to_file.h"
+#include "main.h"
 
 /**
  * append_text_to_file - appends text at the end of a file
