@@ -1,6 +1,7 @@
 #ifndef MY_HEADER
 #define MY_HEADER
 
+#include <fcnt1.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
