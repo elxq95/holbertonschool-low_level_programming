@@ -6,7 +6,6 @@
  * close_file - Closes a file descriptor and handles errors
  * @fd: The file descriptor to close
  */
-
 void close_file(int fd)
 {
 	if (close(fd) == -1)
@@ -17,12 +16,11 @@ void close_file(int fd)
 }
 
 /**
- * *error exist - Prints an error message and exits with a given code
+ * error_exit - Prints an error message and exits with a given code
  * @code: The exit code
  * @message: The error message
- * #filename: THe file name related to the error
+ * @filename: The file name related to the error
  */
-
 void error_exit(int code, const char *message, const char *filename)
 {
 	dprintf(STDERR_FILENO, message, filename);
@@ -30,13 +28,13 @@ void error_exit(int code, const char *message, const char *filename)
 }
 
 /**
- * main - Entry point, copies the content of a file to another file
+ * copy - Copies the content of a file to another file
  * @argc: The number of arguments
  * @argv: The array of arguments
  *
  * Return: 0 on success, exits with an error code on failure
  */
-int main(int argc, char *argv[])
+int copy(int argc, char *argv[])
 {
 	int file_from, file_to;
 	ssize_t bytes_read, bytes_written;
@@ -79,4 +77,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
