@@ -1,8 +1,8 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 #include <unistd.h>
+#include "main.h"
 
 /**
  * main - Copies the content of one file to another.
@@ -14,7 +14,8 @@
 int main(int argc, char *argv[])
 {
         char *fone, *ftwo;
-        int fdone, fdtwo, sz = 1024, wr = 0;
+        int fdone, fdtwo;
+        ssize_t sz = 1024, wr;
         char buffer[1024];
 
         if (argc != 3)
@@ -51,6 +52,7 @@ int main(int argc, char *argv[])
                         exit(99);
                 }
         }
+
         if (sz < 0)
         {
                 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fone);
@@ -72,4 +74,3 @@ int main(int argc, char *argv[])
         }
 
         return (0);
-}
