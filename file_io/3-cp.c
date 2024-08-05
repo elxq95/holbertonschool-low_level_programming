@@ -5,16 +5,17 @@
 #include <unistd.h>
 
 /**
- * main - check the code
- * @argc: no. of params
- * @argv: array of params
+ * main - Copies the content of one file to another.
+ * @argc: Number of parameters.
+ * @argv: Array of parameters.
  *
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
         char *fone, *ftwo;
-        int fdone, fdtwo, sz = 1024, wr = 0, *buffer[1024];
+        int fdone, fdtwo, sz = 1024, wr = 0;
+        char buffer[1024];
 
         if (argc != 3)
         {
@@ -25,13 +26,13 @@ int main(int argc, char *argv[])
         fone = argv[1];
         ftwo = argv[2];
         fdone = open(fone, O_RDONLY);
-        fdtwo = open(ftwo, O_WRONLY | O_CREAT | O_TRUNC, 0664);
-
         if (fdone < 0)
         {
                 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fone);
                 exit(98);
         }
+
+        fdtwo = open(ftwo, O_WRONLY | O_CREAT | O_TRUNC, 0664);
         if (fdtwo < 0)
         {
                 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", ftwo);
@@ -39,17 +40,8 @@ int main(int argc, char *argv[])
                 exit(99);
         }
 
-        while (sz != 0)
+        while ((sz = read(fdone, buffer, 1024)) > 0)
         {
-                sz = read(fdone, buffer, 1024);
-                if (sz < 0)
-                {
-                        dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fone);
-                        close(fdone);
-                        close(fdtwo);
-                        exit(98);
-                }
-
                 wr = write(fdtwo, buffer, sz);
                 if (wr < 0)
                 {
@@ -58,6 +50,13 @@ int main(int argc, char *argv[])
                         close(fdtwo);
                         exit(99);
                 }
+        }
+        if (sz < 0)
+        {
+                dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fone);
+                close(fdone);
+                close(fdtwo);
+                exit(98);
         }
 
         if (close(fdone) < 0)
