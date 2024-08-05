@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
         if (fdtwo < 0)
         {
                 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", ftwo);
-                close(fdone);  // Close the source file descriptor before exiting
+                close(fdone);
                 exit(99);
         }
 
@@ -45,8 +45,8 @@ int main(int argc, char *argv[])
                 if (sz < 0)
                 {
                         dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fone);
-                        close(fdone);  // Close the source file descriptor before exiting
-                        close(fdtwo);  // Close the destination file descriptor before exiting
+                        close(fdone);
+                        close(fdtwo);
                         exit(98);
                 }
 
@@ -54,8 +54,8 @@ int main(int argc, char *argv[])
                 if (wr < 0)
                 {
                         dprintf(STDERR_FILENO, "Error: Can't write to %s\n", ftwo);
-                        close(fdone);  // Close the source file descriptor before exiting
-                        close(fdtwo);  // Close the destination file descriptor before exiting
+                        close(fdone);
+                        close(fdtwo);
                         exit(99);
                 }
         }
